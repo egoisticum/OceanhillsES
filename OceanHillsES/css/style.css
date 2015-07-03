@@ -242,7 +242,7 @@ footer {background: #333333;padding: 40px 80px;}
 @media (min-width: 768px) and (max-width: 1500px) {
     #slider .navigation-wrapper .title{top:43%;}
     #slider .navigation-wrapper .title h1{font-size:3em;}
-    #slider .navigation-wrapper > .devider{top:55%}
+    #slider .navigation-wrapper > .devider{top:65%}
 }
 /*8. Intro section*/
 #intro{padding-top:-50px;border-bottom:1px solid #333333;padding-bottom:85px;}

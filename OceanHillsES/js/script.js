@@ -1,11 +1,18 @@
 ﻿$(document).ready(function () {
-    /*Set home photo sizes*/
-    //function setPhotoSize(){
-    //    var viewportheight = window.innerHeight;
-    //    var object = $(".full-home-image");
-    //    object.css("height", viewportheight + "px");
-    //}
-    //setPhotoSize();
+    /*Move content from header main menu*/
+    function aligncontentwithmenu() {
+        var mainmenuheight = $("#main-header").height();
+        mainmenuheight += "px";
+        var styles = {
+            marginTop: mainmenuheight,
+            position: "fixed"
+        };
+        $(".menu-spacer").css(styles);
+    }
+    aligncontentwithmenu();
+    $(window).resize(function () {
+        aligncontentwithmenu();
+    });
     /*============================================
  Noty functions
  ==============================================*/

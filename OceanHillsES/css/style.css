@@ -98,7 +98,7 @@ background-color:rgba(0,0,0,0.5);position:absolute;top:-10%;left:0;right:0;margi
 /*3. Entorno section*/
 #entorno{border-bottom:1px solid #333333;}
 #entorno .content{height:100%;}
-#entorno .content .headline{margin:-2em 0 4em;}
+#entorno .content .headline{margin:-2em 0 1em;}
 #entorno .content .headline h1 {font-size: 3.429em;font-family: OpenSans-Bold;color:#323436;}
 #entorno .content .headline h3 {font-family: OpenSans-Regular;font-size:1.286em;}
 #entorno .content .blue-line {border-bottom: 2px solid #55cff2;width: 10%;}
@@ -120,7 +120,7 @@ background-color:rgba(0,0,0,0.5);position:absolute;top:-10%;left:0;right:0;margi
 }
 /*4. Viviendas section*/
 #viviendas{}
-#viviendas .content .headline{margin:-2em 0 4em;}
+#viviendas .content .headline{margin:-2em 0 1em;}
 #viviendas .content .headline h1 {font-size: 3.429em;font-family: OpenSans-Bold;color:#323436;}
 #viviendas .content .headline h3 {font-family: OpenSans-Regular;font-size:1.286em;}
 #viviendas .content .blue-line {border-bottom: 2px solid #55cff2;width: 10%;}

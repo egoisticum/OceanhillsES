@@ -44,6 +44,14 @@ i.arrowright:after{content:url('/images/arrowright.png');display:inline-block;ma
 a.left-nav:hover ~ i.arrowup:after{content:url('/images/arrowuphover.png');}
 a.right-nav:hover ~ i.arrowdown:after{content:url('/images/arrowdownhover.png');}
 a.read-more:hover ~ i.arrowright:after{content:url('/images/arrowrighthover.png');}
+
+a.arrow{position:absolute;text-decoration:none; border-bottom:1px solid #55cff2; color:#55cff2;z-index:999;}
+a.arrow i{background-repeat: no-repeat;height: 32px;width: 32px;position:absolute;margin:-5px 0 0 10px;}
+a.arrow i.up{background-image: url("/images/arrowup.png");}
+a.arrow:hover > i.up{background-image: url("/images/arrowuphover.png");}
+a.arrow i.down{background-image: url("/images/arrowdown.png");}
+a.arrow:hover > i.down{background-image: url("/images/arrowdownhover.png");}
+.navigation .pull-right{margin-right:70px;}
 /*1. Helper classes*/
 .no-padding {padding: 0px 0px 0px 0px !important;}
 .loading-overlay {background-color: #ffffff;display: block;height: 100%;opacity: 0.975;position: fixed;transition: opacity 0.3s ease 0s;width: 100%;z-index: 600000;top:0;left:0;bottom:0;right:0;}
@@ -57,12 +65,16 @@ a.read-more:hover ~ i.arrowright:after{content:url('/images/arrowrighthover.png'
 .navbar-nav {width: 100%;text-align: center;}
 .navbar-nav > li {float: none;display: inline-block;}
 .navbar-nav > li a{font-size:14px;}
+.navbar-nav > li a img{max-height:32px;}
 .menu-color .navbar-nav > .active > a{background-color: transparent;border-bottom: medium none;color:#9d9d9d;}
 .navbar-brand {position: absolute;width: 100%;left: 0;top: 0;text-align: center;margin: auto;}
 .navbar-inline {display: inline;}
 .menu-padding {padding: 10px 0px 10px 0px !important;}
 .navbar-img {margin-top: 100px;}
 .menu-color {background-color: #333333;border-radius: 0;z-index: 9999;margin-bottom:0;}
+
+@media(min-width:768px) {#menu {margin-left: 3.8em;}}
+@media(max-width:768px) {#menu {margin-left: 0 !important;}}
 
 #home{}
 #home .full-home-image{position:absolute;width:100%;height:100%;top:0;}
@@ -168,7 +180,7 @@ background-color:rgba(0,0,0,0.5);position:absolute;top:-10%;left:0;right:0;margi
 #contacto #footer{bottom: 0;height: 100%;left: 0;min-height: 150px;position: relative;right: 0;background: #333333 none repeat scroll 0 0;padding: 40px 80px;}
 #contacto #footer a.to-top {background-image: url("/images/arrowup.png");background-repeat: no-repeat;margin-left: 50%;padding: 35px 35px 0 0;}
 
-#contacto .contact-form{background-color: white;top: 2%;height: auto;left: 0;margin-left: 5%;margin-top: 55px;position: absolute;right: 0;width: 30%;z-index: 1000;}
+#contacto .contact-form{background-color: white;top: 2%;height: auto;left: 0;margin-left: 5%;margin-top: 55px;position: absolute;right: 0;width: 25%;z-index: 1000;}
 #contacto .contact-form .info{background-color: #55cff2;color: #ffffff;padding: 45px;}
 #contacto .contact-form .info h1{text-transform:uppercase;color:#000000;font-family:OpenSans-Bold;font-size:18px;}
 #contacto .contact-form .info h2{text-transform:uppercase;font-family:OpenSans-Bold;font-size:16px;}
@@ -192,7 +204,7 @@ background-color:rgba(0,0,0,0.5);position:absolute;top:-10%;left:0;right:0;margi
 #contacto .contact-form .getconnected .social-dribble{background-image:url("/images/contact-dribble.png");}
 #contacto .contact-form .getconnected .social-dribble:hover{background-image:url("/images/contact-dribblehover.png")}
 @media (max-width: 768px) {
-    #contacto .contact-form{width:90%;}
+    #contacto .contact-form{width:70%;}
 }
 
 @media (max-width: 1000px), (max-height:550px) {
@@ -205,6 +217,9 @@ background-color:rgba(0,0,0,0.5);position:absolute;top:-10%;left:0;right:0;margi
     #contacto .contact-form .email{padding:0.3em 1em;}
     #contacto .contact-form .email h1{}
     #contacto .contact-form .email .form-group{margin-bottom:0.5em;}
+}
+@media(min-width: 800px) and (max-width:1200px) and (max-height:900px){
+    #contacto .contact-form{width:50%;}
 }
 @media (max-width: 768px), (max-height:480px){
     #contacto .contact-form{width:80%;}
@@ -245,7 +260,7 @@ footer {background: #333333;padding: 40px 80px;}
     #slider .navigation-wrapper > .devider{top:65%}
 }
 /*8. Intro section*/
-#intro{padding-top:-50px;border-bottom:1px solid #333333;padding-bottom:85px;}
+#intro{border-bottom:1px solid #333333;padding:85px 0 85px 0;}
 #intro h2{font-family:OpenSans-ExtraBold;font-size:24px;color:#333333;}
 #intro p{font-family:OpenSans-Regular; font-size:16px;color:#ababab;}
 /*9. Services section*/

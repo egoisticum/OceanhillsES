@@ -1,5 +1,5 @@
 ﻿<!--navigation-->
-<nav id ="main-header" class="navbar navbar-inverse navbar-fixed-top no-padding menu-color" role="navigation">
+<nav id="main-header" class="navbar navbar-inverse navbar-fixed-top no-padding menu-color" role="navigation">
     <div class="container">
         <div class="navbar-header page-scroll">
             <a class="visible-xs img-responsive mobile-logo" href="/">
@@ -13,7 +13,7 @@
             </button>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse text-center">
-            <ul id="menu" class="nav navbar-nav" style="margin-left: 3.8em">
+            <ul id="menu" class="nav navbar-nav" style="margin-left: 8%">
                 @{
                     String home = "#home", entorno = "#entorno", viviendas = "#viviendas", contacto = "#contacto";
                     if (Request.Url.AbsolutePath.ToString().ToUpper() != "/english".ToUpper() && Request.Url.AbsolutePath.ToString().ToUpper() != "/english/".ToUpper())
@@ -22,17 +22,29 @@
                         home = home.Insert(0, domain); entorno = entorno.Insert(0, domain); viviendas = viviendas.Insert(0, domain); contacto = contacto.Insert(0, domain);
                     }
                     @*<li class="hidden menu-link active" data-menuanchor="main-header"><a class="page-scroll" href="#main-header"></a></li>*@
-                    <li id="home-link" class="menu-link active" data-menuanchor="home"><a class="margin-right-30" href="@home">HOME</a> </li>
-                    <li class="menu-link" data-menuanchor="entorno"><a class="margin-right-30" href="@entorno">ENVIRONMENT</a></li>
-                    <li class="menu-link" data-menuanchor="home">
+                    <li id="home-link" class="menu-link hidden-xs active" data-menuanchor="home"><a class="margin-right-30" href="@home">HOME</a> </li>
+                    <li class="hidden-xs menu-link" data-menuanchor="entorno"><a class="margin-right-30" href="@entorno">ENVIRONMENT</a></li>
+                    <li class="hidden-xs menu-link" data-menuanchor="home">
                         <a class="img-responsive hidden-xs page-scroll" href="@home">
                             <img src="~/images/OceanHillsMenuLogo.png" />
                         </a>
                     </li>
-                    <li class="menu-link" data-menuanchor="viviendas"><a class="margin-left-30" href="@viviendas">HOME'S</a></li>
-                    <li class="menu-link" data-menuanchor="contacto"><a class="margin-left-30" href="@contacto">CONTACT</a></li>
-                    <li class="menu-link pull-right" data-menuanchor="en"><a class="margin-left-30" href="/english">EN</a></li>
-                    <li class="menu-link pull-right" data-menuanchor="es"><a class="margin-left-30" href="/">ES</a></li>
+                    <li class="hidden-xs menu-link" data-menuanchor="viviendas"><a class="margin-left-30" href="@viviendas">HOME'S</a></li>
+                    <li class="hidden-xs menu-link" data-menuanchor="contacto"><a class="margin-left-30" href="@contacto">CONTACT</a></li>
+                    <li class="hidden-xs menu-link pull-right" data-menuanchor="en"><a class="margin-left-30" href="/english"><img src="~/images/gb.jpg" class="img-responsive" /></a></li>
+                    <li class="hidden-xs menu-link pull-right" data-menuanchor="es"><a class="margin-left-30" href="/"><img src="~/images/sp.jpg" class="img-responsive" /></a></li>
+                    <!--mobile version-->
+                    <li id="home-link" class="menu-link visible-xs active" data-menuanchor="home"><a class="margin-right-30" href="@home">HOME</a> </li>
+                    <li class="visible-xs menu-link" data-menuanchor="entorno"><a class="margin-right-30" href="@entorno">ENVIRONMENT</a></li>
+                    <li class="visible-xs menu-link" data-menuanchor="home">
+                        <a class="img-responsive hidden-xs page-scroll" href="@home">
+                            <img src="~/images/OceanHillsMenuLogo.png" />
+                        </a>
+                    </li>
+                    <li class="visible-xs menu-link" data-menuanchor="viviendas"><a class="margin-left-30" href="@viviendas">HOME'S</a></li>
+                    <li class="visible-xs menu-link" data-menuanchor="contacto"><a class="margin-left-30" href="@contacto">CONTACT</a></li>
+                    <li class="visible-xs col-xs-6 menu-link pull-right" data-menuanchor="en"><a class="margin-left-30" href="/english"><img src="~/images/gb.jpg" class="img-responsive" /></a></li>
+                    <li class="visible-xs menu-link pull-right" data-menuanchor="es"><a class="margin-left-30" href="/"><img src="~/images/sp.jpg" class="img-responsive" /></a></li>
                 }
             </ul>
         </div>

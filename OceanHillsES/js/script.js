@@ -8,6 +8,7 @@
             position: "fixed"
         };
         $(".menu-spacer").css(styles);
+        $(".menu-spacer-home").css("height", mainmenuheight);
     }
     aligncontentwithmenu();
     $(window).resize(function () {
@@ -98,14 +99,17 @@
         if (document.body.clientWidth < 768) {
             height = document.body.clientHeight * 0.7 + "px";
         }
-        $("#map-canvas").css("height", height);
+        var styles = {
+            height: height,
+            width: document.body.clientWidth + "px"
+        };
+        $("#map-canvas").css(styles);
         initialize();
     }
     setMapDimensions();
     $(window).resize(function () {
         setMapDimensions();
     });
-    initialize();
 });
 //google maps
 function initialize() {

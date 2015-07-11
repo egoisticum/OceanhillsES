@@ -207,6 +207,7 @@
     <Content Include="images\contacto-arrowup.png" />
     <Content Include="images\contacto-arrowuphover.png" />
     <Content Include="images\Elipse 1.png" />
+    <Content Include="images\gb.jpg" />
     <Content Include="images\home-logo.png" />
     <Content Include="images\iconmarker.png" />
     <Content Include="images\LeftArrow.png" />
@@ -217,6 +218,7 @@
     <Content Include="images\loading.gif" />
     <Content Include="images\main-slider.jpg" />
     <Content Include="images\MainImageOceanHills.png" />
+    <Content Include="images\sp.jpg" />
     <Content Include="images\viviendas-gallery-cover.jpg" />
     <Content Include="images\oceanHillsfooter.png" />
     <Content Include="images\OceanHillsMenuLogo.png" />
@@ -263,9 +265,11 @@
     <Content Include="images\viviendas-gallery\vivienda-3\a82-Vista-de-salon-y-cocina.jpg" />
     <Content Include="images\viviendas-gallery\vivienda-3\a82-Vista-desde-baño.jpg" />
     <Content Include="images\viviendas-gallery\vivienda-3\cam-7-Urbanizacion-a82.jpg" />
+    <Content Include="images\viviendas-gallery\vivienda-3\duplex4.jpg" />
     <Content Include="images\viviendas-gallery\vivienda-3\preview-a82-Duplex-esquina-1.jpg" />
     <Content Include="images\viviendas-gallery\vivienda-3\preview-a82-Duplex-esquina-especial-2.jpg" />
     <Content Include="images\viviendas-gallery\vivienda-3\preview-a82-Duplex-tipo-2.jpg" />
+    <Content Include="images\viviendas-gallery\vivienda-3\preview-duplex4.jpg" />
     <Content Include="images\viviendas-gallery\vivienda-3\slider-cover.jpg" />
     <Content Include="images\whiteSliderLeft.png" />
     <Content Include="images\whiteSliderRight.png" />
@@ -322,12 +326,12 @@
     <Content Include="css\bootstrap-theme.css.map" />
     <Content Include="css\bootstrap.css.map" />
     <Content Include="js\lightbox.min.map" />
-    <Content Include="pdfs\duplex english.pdf" />
-    <Content Include="pdfs\dúplex español.pdf" />
-    <Content Include="pdfs\first floor english.pdf" />
-    <Content Include="pdfs\ground floor english.pdf" />
-    <Content Include="pdfs\Planta Baja español.pdf" />
-    <Content Include="pdfs\Primera Planta español.pdf" />
+    <Content Include="pdfs\PDF-duplex-English.pdf" />
+    <Content Include="pdfs\PDF-Dúplex-español.pdf" />
+    <Content Include="pdfs\PDF-first-floor-English.pdf" />
+    <Content Include="pdfs\PDF-ground-floor-English.pdf" />
+    <Content Include="pdfs\PDF-Planta-Baja-español.pdf" />
+    <Content Include="pdfs\PDF-Primera-Planta-español.pdf" />
     <None Include="Project_Readme.html" />
     <Content Include="Views\Home\Vivienda1.cshtml" />
     <None Include="Properties\PublishProfiles\MSS test.pubxml" />

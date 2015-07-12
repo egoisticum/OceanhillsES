@@ -110,15 +110,28 @@
     $(window).resize(function () {
         setMapDimensions();
     });
+    //code for setting entorno map height
+    function setEntornoMapDimensions() {
+        var height = $("#carousel-entorno").height();
+        var width = $("#carousel-entorno").width();
+        $("#entorno-map").attr("height", height);
+        $("#entorno-map").attr("width", width);
+    }
+    $(window).load(function () {
+        setEntornoMapDimensions();
+    });
+    $(window).resize(function () {
+        setEntornoMapDimensions();
+    });
 });
 //google maps
 function initialize() {
-    var location1 = new google.maps.LatLng('40.432825', '-3.690455');
+    var location1 = new google.maps.LatLng('36.4759829', '-5.0770475');
     var mapCanvas = document.getElementById('map-canvas');
     var mapOptions = {
         draggable: false,
         disableDefaultUI: false,
-        center: new google.maps.LatLng('40.432825', '-3.690455'),
+        center: new google.maps.LatLng('36.4759829', '-5.0770475'),
         zoom: 14,
         scrollwheel: false,
         mapTypeId: google.maps.MapTypeId.ROADMAP,

@@ -13,38 +13,42 @@
             </button>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse text-center">
-            <ul id="menu" class="nav navbar-nav" style="margin-left: 8%">
+            <ul id="menu" class="nav navbar-nav">
                 @{
                     String home = "#home", entorno = "#entorno", viviendas = "#viviendas", contacto = "#contacto";
-                    if (Request.Url.AbsolutePath.ToString().ToUpper() != "/english".ToUpper() && Request.Url.AbsolutePath.ToString().ToUpper() != "/english/".ToUpper())
+                    if (Request.Url.AbsolutePath.ToString() != "/")
                     {
-                        String domain = "http://" + Request.Url.Authority + "/english/";
+                        String domain = "http://" + Request.Url.Authority + "/";
                         home = home.Insert(0, domain); entorno = entorno.Insert(0, domain); viviendas = viviendas.Insert(0, domain); contacto = contacto.Insert(0, domain);
                     }
-                    @*<li class="hidden menu-link active" data-menuanchor="main-header"><a class="page-scroll" href="#main-header"></a></li>*@
-                    <li id="home-link" class="menu-link hidden-xs active" data-menuanchor="home"><a class="margin-right-30" href="@home">HOME</a> </li>
-                    <li class="hidden-xs menu-link" data-menuanchor="entorno"><a class="margin-right-30" href="@entorno">ENVIRONMENT</a></li>
-                    <li class="hidden-xs menu-link" data-menuanchor="home">
-                        <a class="img-responsive hidden-xs page-scroll" href="@home">
-                            <img src="~/images/OceanHillsMenuLogo.png" />
-                        </a>
+                    <!--desktop & tablet menu-->
+                    <li class="hidden-xs menu-link" data-menuanchor="entorno"><a href="@entorno">ENVIRONMENT</a></li>
+                    <li class="hidden-xs menu-link" data-menuanchor="viviendas"><a href="@viviendas">HOME's</a></li>
+                    <li class="hidden-xs menu-link" data-menuanchor="home"><a class="img-responsive hidden-xs page-scroll" href="@home"><img src="~/images/OceanHillsMenuLogo.png" /></a></li>
+                    <li class="hidden-xs menu-link" data-menuanchor="contacto"><a href="@contacto">CONTACT</a></li>
+                    <li class="hidden-xs menu-link dropdown">
+                        <a href="#lg" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LANGUAGES<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="col-xs-12 menu-link"><a href="/"><img src="~/images/sp.jpg" class="img-responsive center-block" /></a></li>
+                            <li class="col-xs-12 menu-link"><a href="/english"><img src="~/images/gb.jpg" class="img-responsive center-block" /></a></li>
+                        </ul>
                     </li>
-                    <li class="hidden-xs menu-link" data-menuanchor="viviendas"><a class="margin-left-30" href="@viviendas">HOME'S</a></li>
-                    <li class="hidden-xs menu-link" data-menuanchor="contacto"><a class="margin-left-30" href="@contacto">CONTACT</a></li>
-                    <li class="hidden-xs menu-link pull-right" data-menuanchor="en"><a class="margin-left-30" href="/english"><img src="~/images/gb.jpg" class="img-responsive" /></a></li>
-                    <li class="hidden-xs menu-link pull-right" data-menuanchor="es"><a class="margin-left-30" href="/"><img src="~/images/sp.jpg" class="img-responsive" /></a></li>
-                    <!--mobile version-->
-                    <li id="home-link" class="menu-link visible-xs active" data-menuanchor="home"><a class="margin-right-30" href="@home">HOME</a> </li>
-                    <li class="visible-xs menu-link" data-menuanchor="entorno"><a class="margin-right-30" href="@entorno">ENVIRONMENT</a></li>
-                    <li class="visible-xs menu-link" data-menuanchor="home">
-                        <a class="img-responsive hidden-xs page-scroll" href="@home">
-                            <img src="~/images/OceanHillsMenuLogo.png" />
-                        </a>
+                    <li class="hidden-xs menu-link"><p><i class="fa fa-phone"></i>+34 91 781 57 00</p></li>
+                    <li class="hidden-xs menu-link"><p><i class="fa fa-envelope"></i>info@oceanhillsestepona.com </p></li>
+                    <!--mobile menu-->
+                    <li class="visible-xs col-xs-12 menu-link" data-menuanchor="entorno"><a href="@entorno">ENVIRONMENT</a></li>
+                    <li class="visible-xs col-xs-12 menu-link" data-menuanchor="viviendas"><a href="@viviendas">HOME's</a></li>
+                    <li class="visible-xs col-xs-12 menu-link" data-menuanchor="home"><a class="img-responsive col-xs-12 page-scroll" href="@home"><img src="~/images/OceanHillsMenuLogo.png" /></a></li>
+                    <li class="visible-xs col-xs-12 menu-link" data-menuanchor="contacto"><a href="@contacto">CONTACT</a></li>
+                    <li class="visible-xs col-xs-12 menu-link dropdown">
+                        <a href="#lg" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LANGUAGES<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="col-xs-12 menu-link"><a href="/"><img src="~/images/sp.jpg" class="img-responsive center-block" /></a></li>
+                            <li class="col-xs-12 menu-link"><a href="/english"><img src="~/images/gb.jpg" class="img-responsive center-block" /></a></li>
+                        </ul>
                     </li>
-                    <li class="visible-xs menu-link" data-menuanchor="viviendas"><a class="margin-left-30" href="@viviendas">HOME'S</a></li>
-                    <li class="visible-xs menu-link" data-menuanchor="contacto"><a class="margin-left-30" href="@contacto">CONTACT</a></li>
-                    <li class="visible-xs col-xs-6 menu-link pull-right" data-menuanchor="en"><a class="margin-left-30" href="/english"><img src="~/images/gb.jpg" class="img-responsive" /></a></li>
-                    <li class="visible-xs menu-link pull-right" data-menuanchor="es"><a class="margin-left-30" href="/"><img src="~/images/sp.jpg" class="img-responsive" /></a></li>
+                    <li class="visible-xs col-xs-12 menu-link"><p><i class="fa fa-phone"></i>+34 91 781 57 00</p></li>
+                    <li class="visible-xs col-xs-12 menu-link"><p><i class="fa fa-envelope"></i>info@oceanhillsestepona.com </p></li>
                 }
             </ul>
         </div>

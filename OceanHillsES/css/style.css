@@ -51,7 +51,10 @@ a.arrow i.up{background-image: url("/images/arrowup.png");}
 a.arrow:hover > i.up{background-image: url("/images/arrowuphover.png");}
 a.arrow i.down{background-image: url("/images/arrowdown.png");}
 a.arrow:hover > i.down{background-image: url("/images/arrowdownhover.png");}
-.navigation .pull-right{margin-right:70px;}
+
+.navigation .left-side{position:relative; float:left;}
+.navigation .right-side{position:relative; float:right;margin-right:40px;}
+/*.navigation .pull-right{margin-right:70px;}*/
 /*1. Helper classes*/
 .no-padding {padding: 0px 0px 0px 0px !important;}
 .loading-overlay {background-color: #ffffff;display: block;height: 100%;opacity: 0.975;position: fixed;transition: opacity 0.3s ease 0s;width: 100%;z-index: 600000;top:0;left:0;bottom:0;right:0;}
@@ -66,6 +69,7 @@ a.arrow:hover > i.down{background-image: url("/images/arrowdownhover.png");}
 .navbar-nav > li {float: none;display: inline-block;}
 .navbar-nav > li a{font-size:14px;}
 .navbar-nav > li a img{max-height:32px;}
+.navbar-nav > li p{color:#55cff2;font-size: 0.7em;padding: 15px;}
 .menu-color .navbar-nav > .active > a{background-color: transparent;border-bottom: medium none;color:#9d9d9d;}
 .navbar-brand {position: absolute;width: 100%;left: 0;top: 0;text-align: center;margin: auto;}
 .navbar-inline {display: inline;}
@@ -73,7 +77,7 @@ a.arrow:hover > i.down{background-image: url("/images/arrowdownhover.png");}
 .navbar-img {margin-top: 100px;}
 .menu-color {background-color: #333333;border-radius: 0;z-index: 9999;margin-bottom:0;}
 
-@media(min-width:768px) {#menu {margin-left: 3.8em;}}
+@media(min-width:768px) {#menu {margin-left: 10em;}}
 @media(max-width:768px) {#menu {margin-left: 0 !important;}}
 
 #home{}
@@ -120,7 +124,7 @@ background-color:rgba(0,0,0,0.5);position:absolute;top:-10%;left:0;right:0;margi
 #entorno .carousel-indicators li{background-color:#ffffff;border:1px solid #333;}
 #entorno .carousel-indicators .active{background-color:#333;}
 @media (max-width:768px), (max-height:480px){
-    #entorno .content .headline{margin:-2em 0 0;}
+    #entorno .content .headline{margin:-1em 0 0;}
     #entorno .content .headline h1 {font-size: 2em;margin-bottom:0.2em;}
     #entorno .content .headline h3{margin-top:0.5em;}
     #entorno #carousel-entorno .carousel-inner .item .entorno-img{max-height:180px;}

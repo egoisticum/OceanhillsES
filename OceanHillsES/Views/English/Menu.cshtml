@@ -16,15 +16,15 @@
             <ul id="menu" class="nav navbar-nav">
                 @{
                     String home = "#home", entorno = "#entorno", viviendas = "#viviendas", contacto = "#contacto";
-                    if (Request.Url.AbsolutePath.ToString() != "/")
+                    if (Request.Url.AbsolutePath.ToString() != "/english")
                     {
-                        String domain = "http://" + Request.Url.Authority + "/";
+                        String domain = "http://" + Request.Url.Authority + "/english";
                         home = home.Insert(0, domain); entorno = entorno.Insert(0, domain); viviendas = viviendas.Insert(0, domain); contacto = contacto.Insert(0, domain);
                     }
                     <!--desktop & tablet menu-->
                     <li class="hidden-xs menu-link" data-menuanchor="entorno"><a href="@entorno">ENVIRONMENT</a></li>
-                    <li class="hidden-xs menu-link" data-menuanchor="viviendas"><a href="@viviendas">HOME's</a></li>
-                    <li class="hidden-xs menu-link" data-menuanchor="home"><a class="img-responsive hidden-xs page-scroll" href="@home"><img src="~/images/OceanHillsMenuLogo.png" /></a></li>
+                    <li class="hidden-xs menu-link" data-menuanchor="viviendas"><a href="@viviendas">APARTMENTS</a></li>
+                    <li class="hidden-xs menu-link" data-menuanchor="home"><a href="@home"><span></span><img src="~/images/OceanHillsMenuLogo.png" /></a></li>
                     <li class="hidden-xs menu-link" data-menuanchor="contacto"><a href="@contacto">CONTACT</a></li>
                     <li class="hidden-xs menu-link dropdown">
                         <a href="#lg" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LANGUAGES<span class="caret"></span></a>
@@ -33,11 +33,15 @@
                             <li class="col-xs-12 menu-link"><a href="/english"><img src="~/images/gb.jpg" class="img-responsive center-block" /></a></li>
                         </ul>
                     </li>
-                    <li class="hidden-xs menu-link"><p><i class="fa fa-phone"></i>+34 91 781 57 00</p></li>
-                    <li class="hidden-xs menu-link"><p><i class="fa fa-envelope"></i>info@oceanhillsestepona.com </p></li>
+                    <li class="hidden-xs menu-link">
+                        <p>
+                            <i class="fa fa-envelope"><span>info@oceanhillsestepona.com</span></i><br>
+                            <i class="fa fa-phone pull-left"><span>+34 91 781 57 00</span></i>
+                        </p>
+                    </li>
                     <!--mobile menu-->
                     <li class="visible-xs col-xs-12 menu-link" data-menuanchor="entorno"><a href="@entorno">ENVIRONMENT</a></li>
-                    <li class="visible-xs col-xs-12 menu-link" data-menuanchor="viviendas"><a href="@viviendas">HOME's</a></li>
+                    <li class="visible-xs col-xs-12 menu-link" data-menuanchor="viviendas"><a href="@viviendas">APARTMENTS</a></li>
                     <li class="visible-xs col-xs-12 menu-link" data-menuanchor="home"><a class="img-responsive col-xs-12 page-scroll" href="@home"><img src="~/images/OceanHillsMenuLogo.png" /></a></li>
                     <li class="visible-xs col-xs-12 menu-link" data-menuanchor="contacto"><a href="@contacto">CONTACT</a></li>
                     <li class="visible-xs col-xs-12 menu-link dropdown">
@@ -47,8 +51,12 @@
                             <li class="col-xs-12 menu-link"><a href="/english"><img src="~/images/gb.jpg" class="img-responsive center-block" /></a></li>
                         </ul>
                     </li>
-                    <li class="visible-xs col-xs-12 menu-link"><p><i class="fa fa-phone"></i>+34 91 781 57 00</p></li>
-                    <li class="visible-xs col-xs-12 menu-link"><p><i class="fa fa-envelope"></i>info@oceanhillsestepona.com </p></li>
+                    <li class="visible-xs col-xs-12 menu-link">
+                        <p>
+                            <i class="fa fa-envelope"></i><span>info@oceanhillsestepona.com</span><br />
+                            <i class="fa fa-phone"></i><span>+34 91 781 57 00</span>
+                        </p>
+                    </li>
                 }
             </ul>
         </div>

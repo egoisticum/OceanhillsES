@@ -86,7 +86,7 @@
     /*google map click*/
     function redirectOnMap() {
         if (window.innerHeight <= 768) {
-            window.open("https://www.google.com/maps/@40.432825,-3.690455,13z?hl=en", "_blank");
+            window.open("https://www.google.com/maps/@36.4759829,-5.0770475,13z?hl=en", "_blank");
         }
     }
     $("#map-canvas").click(function () {
@@ -141,7 +141,8 @@ function initialize() {
     var marker = new google.maps.Marker({
         position: location1,
         map: map,
-        icon: { url: 'images/iconmarker.png' }
+        icon: { url: 'images/iconmarker.png' },
+        url: 'https://www.google.com/maps/@36.4759829,-5.0770475,13z?hl=en'
     });
 }
 $(window).load(function () {

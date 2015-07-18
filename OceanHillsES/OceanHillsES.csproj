@@ -305,6 +305,7 @@
     <Content Include="fonts\OpenSans-Regular.ttf" />
     <Content Include="fonts\OpenSans-Semibold.ttf" />
     <Content Include="fonts\OpenSans-SemiboldItalic.ttf" />
+    <Content Include="pdfs\PDF-duplex-English.pdf" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -326,7 +327,6 @@
     <Content Include="css\bootstrap-theme.css.map" />
     <Content Include="css\bootstrap.css.map" />
     <Content Include="js\lightbox.min.map" />
-    <Content Include="pdfs\PDF-duplex-English.pdf" />
     <Content Include="pdfs\PDF-Dúplex-español.pdf" />
     <Content Include="pdfs\PDF-first-floor-English.pdf" />
     <Content Include="pdfs\PDF-ground-floor-English.pdf" />

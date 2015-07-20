@@ -61,6 +61,8 @@ a.arrow:hover > i.down{background-image: url("/images/arrowdownhover.png");}
 .loading-overlay .loader {bottom: 0;height: 14.125em;left: 0;margin: auto;position: absolute;right: 0;top: 0;width: 18.75em;}
 #loader{position:fixed;z-index:99999;top:0;left:0;bottom:0;right:0;background:rgba(0,0,0,0.9);transition: 1s 0.4s;}
 #loader img{margin:0 auto;display: inline-block;vertical-align: middle;float: none;}
+.middleWrapper{position:absolute; height:100%; width:100%;display: table;}
+.middle{display: table-cell;vertical-align: middle;}
 /*2. Home section*/
 /*--------------------Navbar--------------------*/
 .navbar {background: #333333;}
@@ -92,6 +94,9 @@ background-color:rgba(0,0,0,0.5);position:absolute;top:-10%;left:0;right:0;margi
 #home .content h1{font-family:OpenSans-Bold;font-size:4.4em;text-align:center;color:#ffffff;}
 #home .content h3{font-family:OpenSans-Light;font-size:2.2em;text-align:center;color:#ffffff;}
 #home .content p{font-family:OpenSans-Regular;font-size:1em;text-align:center;color:#ffffff;}
+@media(min-width:1000px) and (min-height:1300px){
+    #home .content{margin-top:22em;}
+}
 @media (max-height:480px){
     #home .content{margin-top:7.5em;width:80%;}
     #home .content h2{font-size:2em;}
@@ -122,6 +127,7 @@ background-color:rgba(0,0,0,0.5);position:absolute;top:-10%;left:0;right:0;margi
 #entorno .content .blue-line {border-bottom: 2px solid #55cff2;width: 10%;}
 #entorno #carousel-entorno .carousel-inner{width:100%;height:100%;}
 #entorno #carousel-entorno .carousel-inner .entorno-img{width:100%;display:block;margin-left:auto;margin-right:auto;}
+#entorno #carousel-entorno .carousel-inner .full-width{width:100%;height:auto;}
 #entorno .carousel-indicators{position:relative;margin-top:2.5em;}
 #entorno .carousel-indicators li{background-color:#ffffff;border:1px solid #333;}
 #entorno .carousel-indicators .active{background-color:#333;}

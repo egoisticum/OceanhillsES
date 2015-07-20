@@ -54,6 +54,10 @@ html, body {
     width: 100%;
     height: 100%;
 }
+/*solving problem with dimensions*/
+@media(min-height:1300px){
+    #home .pp-tableCell, #entorno .pp-tableCell, #viviendas .pp-tableCell {vertical-align:middle;}
+}
 .pp-slidesNav{
     position: absolute;
     z-index: 4;

@@ -207,6 +207,7 @@
     <Content Include="images\contacto-arrowup.png" />
     <Content Include="images\contacto-arrowuphover.png" />
     <Content Include="images\Elipse 1.png" />
+    <Content Include="images\entorno-map.JPG" />
     <Content Include="images\gb.jpg" />
     <Content Include="images\home-logo.png" />
     <Content Include="images\iconmarker.png" />
@@ -360,7 +361,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>29821</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

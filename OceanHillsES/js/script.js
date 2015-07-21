@@ -141,8 +141,13 @@ function initialize() {
     var marker = new google.maps.Marker({
         position: location1,
         map: map,
+        zIndex: 999,
         icon: { url: 'images/iconmarker.png' },
-        url: 'https://www.google.com/maps/@36.4759829,-5.0770475,13z?hl=en'
+        url: 'http://www.google.com/maps/@36.4759829,-5.0770475,13z?hl=en'
+    });
+    google.maps.event.addListener(marker, 'click', function () {
+        var win = window.open(marker.url, '_blank');
+        win.focus();
     });
 }
 $(window).load(function () {
